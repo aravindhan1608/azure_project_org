@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OREGANO</title>
+    <link rel="icon" href="{{ url_for('static', filename='hp4.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='keezhanelli.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+      
+                                      <!---Navbar--->
+
+                                      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+                                        <div class="container-fluid">
+                                          <a class="navbar-brand" href="#">PLANTS </a>
+                                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                                            <span class="navbar-toggler-icon"></span>
+                                          </button>
+                                                                    
+                                            <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+                                              <ul class="navbar-nav mx-auto">
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/"><i class="fa fa-home"></i>HOME</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/herbalplants.html">HERBAL PLANTS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/flowers.html">HERBAL FLOWERS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/contact.html">CONTACT</a>
+                                                </li>
+                                                
+                                              </ul>
+                                      <!-- cart icon -->
+                                              <div class="cart">
+                                                <a href="/">
+                                                  <i class="fa fa-shopping-cart fa-xl"></i>
+                                                  <span
+                                                    class="badge"
+                                                    style="background-color: #000; border-radius: 100%"
+                                                    id="cartincrement"
+                                                    >0</span
+                                                  ></a>
+                                              </div>
+                                              <a href="/login"><button   class="btn p-2 my-lg-0 my-2">Login</button></a>
+                                               
+                                             </div>
+                                          </div>
+                                        </nav>
+      
+      <section id="kilanelli">
+        <div class="container-fluid">
+        <div class="row">
+            <h1>JASMINE</h1><br>
+          <div>
+            <img src="{{ url_for('static', filename='jasmine 3.jpg')}}" class="img1">
+            <h4>USES OF JASMINE</h4></div>
+            <div class="k">
+              <h5>1.RELAXATION AND STRESS REDUCTION</h5>
+              <p> The aroma of jasmine has been shown to have calming and soothing effects on the mind and body. Inhaling jasmine essential oil or drinking jasmine tea can help reduce stress, anxiety, and tension, promoting relaxation and a sense of well-being. The scent of jasmine stimulates the release of certain neurotransmitters in the brain, such as serotonin, which are associated with mood regulation and relaxation. </p>
+              <h5>2.IMPROVED SLEEP QUALITY</h5> 
+              <p>Jasmine is often used to promote better sleep and alleviate insomnia. Aromatherapy with jasmine essential oil before bedtime can help induce feelings of relaxation and calmness, making it easier to fall asleep and improve sleep quality. Drinking jasmine tea in the evening can also have a similar calming effect on the nervous system, leading to a more restful night's sleep.</p>
+              <h5>3.MOOD ENHANCEMENT</h5>
+              <p>The sweet and floral scent of jasmine has mood-enhancing properties, helping to uplift the spirits and improve mood. Aromatherapy with jasmine essential oil can stimulate the production of endorphins and other feel-good hormones in the brain, resulting in feelings of happiness, positivity, and well-being.</p>
+              <h5>4.APHRODISIAC EFFECTS</h5>
+              <p>Jasmine is sometimes considered an aphrodisiac due to its sensual and exotic aroma. The scent of jasmine is believed to stimulate feelings of desire and arousal, making it a popular choice for romantic occasions and intimate settings. Aromatherapy with jasmine essential oil or using jasmine-scented products can enhance the mood and create a romantic atmosphere.</p> 
+              <h5>5.SKIN BENEFITS</h5> 
+              <p>Jasmine essential oil has antiseptic, anti-inflammatory, and skin-healing properties that can benefit the skin. It is often used in skincare products to treat various skin conditions, including acne, eczema, and dermatitis. Jasmine oil helps soothe irritation, reduce redness and inflammation, and promote skin regeneration, resulting in smoother, healthier-looking skin.</p> 
+              </div>
+            <div class="col-lg-6 col-md-6 col-12">
+            <img src="{{ url_for('static', filename='jasmine 1.jpg')}}" class="img-fluid01">
+            </div>
+
+        <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2 my-5">
+           <div class="abcd"> 
+            JASMINE<br></div>
+            <div class="rate">
+              Rs 519/-<br></div>
+             <div class="wait">M.R.P.: <strike>1245</strike><br>
+              FREE delivery. Order within 2 days.</h6>
+            </div>
+            <div class="container">
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star "></span><br>
+            </div>
+            <div class="click">
+              <a href="#"><button class="button" onclick="incrementButton()">ADD CART</button></a>
+              <a href="/checkout.html"><button class="button">BUY NOW</button></a>
+            </div>
+
+            
+          </div>        
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4" >
+              <h3 style="margin-left: 25%;">About Us</h3>
+              <p style="margin-right: 20%;">An herb is a plant or plant part used for its scent, flavor, or therapeutic properties. Herbal
+                medicines are one type of dietary supplement. They are sold as tablets, capsules, powders, teas,
+                extracts, and fresh or dried plants. People use herbal medicines to try to maintain or improve 
+                their health.</p>
+          </div>
+          <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/herbalplants.html">plants</a></li>
+                <li><a href="/flowers.html">flowers</a></li>
+                <li><a href="/contact.html">contact</a></li>
+          </div>
+          <div class="col-md-4">
+              <h3 style="margin-left: 25%;">Contact Us</h3>
+              <p>Email: oregano2024@gmail.com<br>
+              Phone: +91 7538867350<br>
+              Address: 123 Street,Tambaram-Selaiyur main road,Tambaram,chennai-59</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>

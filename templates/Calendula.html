@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OREGANO</title>
+    <link rel="icon" href="{{ url_for('static', filename='hp4.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='keezhanelli.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+      
+                                      <!---Navbar--->
+
+                                      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+                                        <div class="container-fluid">
+                                          <a class="navbar-brand" href="#">PLANTS </a>
+                                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                                            <span class="navbar-toggler-icon"></span>
+                                          </button>
+                                                                    
+                                            <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+                                              <ul class="navbar-nav mx-auto">
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/"><i class="fa fa-home"></i>HOME</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/herbalplants.html">HERBAL PLANTS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/flowers.html">HERBAL FLOWERS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/contact.html">CONTACT</a>
+                                                </li>
+                                                
+                                              </ul>
+                                      <!-- cart icon -->
+                                              <div class="cart">
+                                                <a href="/">
+                                                  <i class="fa fa-shopping-cart fa-xl"></i>
+                                                  <span
+                                                    class="badge"
+                                                    style="background-color: #000; border-radius: 100%"
+                                                    id="cartincrement"
+                                                    >0</span
+                                                  ></a>
+                                              </div>
+                                              <a href="/login"><button   class="btn p-2 my-lg-0 my-2">Login</button></a>
+                                               
+                                             </div>
+                                          </div>
+                                        </nav>
+      
+      <section id="kilanelli">
+        <div class="container-fluid">
+        <div class="row">
+            <h1>CALENDULA OFFICINALIS </h1><br>
+          <div>
+            <img src="{{ url_for('static', filename='calendula 4.jpg')}}" class="img1">
+            <h4>USES OF CALENDULA OFFICINALIS</h4></div>
+            <div class="k">
+              <h5>1.SKIN HEALTH</h5>
+              <p>Calendula has long been used topically to promote skin health. It possesses anti-inflammatory, antibacterial, and antifungal properties, making it beneficial for various skin conditions such as wounds, cuts, scrapes, burns, insect bites, rashes, eczema, and acne. Calendula ointments, creams, or salves are often applied directly to the affected area to soothe irritation, reduce inflammation, and promote healing.</p>
+              <h5>2.WOUND HEALING</h5> 
+              <p>Calendula is known for its ability to stimulate tissue regeneration and repair. It can accelerate the healing process of wounds by promoting the formation of new tissue and reducing the risk of infection. Calendula preparations are commonly used in herbal first aid kits for treating minor injuries and wounds.</p>
+              <h5>3.SKIN HYDRATION</h5>
+              <p>Calendula extracts have moisturizing properties that can help hydrate and soften the skin. Calendula-infused creams or lotions are popular for dry or chapped skin, providing soothing relief and restoring moisture balance.</p>
+              <h5>4.ANTI-INFLAMMATORY</h5>
+              <p>  Calendula contains compounds such as flavonoids and triterpenoids that possess anti-inflammatory properties. It can help reduce inflammation associated with various skin conditions, as well as inflammatory conditions like arthritis.</p> 
+              <h5>5.ORAL HEALTH</h5> 
+              <p>Calendula mouthwashes or gargles can help soothe oral inflammations, gum infections, and sore throats. Its antiseptic and anti-inflammatory properties make it beneficial for maintaining oral hygiene and promoting gum health.</p> 
+              </div>
+            <div class="col-lg-6 col-md-6 col-12">
+            <img src="{{ url_for('static', filename='CALENDULA OFFICINALIS with pot.jpg')}}" class="img-fluid01">
+            </div>
+
+        <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2 my-5">
+           <div class="abcd"> 
+            CALENDULA OFFICINALIS<br></div>
+            <div class="rate">
+              Rs 299/-<br></div>
+             <div class="wait">M.R.P.: <strike>800</strike><br>
+              FREE delivery. Order within 2 days.</h6>
+            </div>
+            <div class="container">
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span><br>
+            </div>
+            <div class="click">
+              <a href="#"><button class="button" onclick="incrementButton()">ADD CART</button></a>
+              <a href="/checkout.html"><button class="button">BUY NOW</button></a>
+            </div>
+
+            
+          </div>        
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4" >
+              <h3 style="margin-left: 25%;">About Us</h3>
+              <p style="margin-right: 20%;">An herb is a plant or plant part used for its scent, flavor, or therapeutic properties. Herbal
+                medicines are one type of dietary supplement. They are sold as tablets, capsules, powders, teas,
+                extracts, and fresh or dried plants. People use herbal medicines to try to maintain or improve 
+                their health.</p>
+          </div>
+          <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/herbalplants.html">plants</a></li>
+                <li><a href="/flowers.html">flowers</a></li>
+                <li><a href="/contact.html">contact</a></li>
+          </div>
+          <div class="col-md-4">
+              <h3 style="margin-left: 25%;">Contact Us</h3>
+              <p>Email: oregano2024@gmail.com<br>
+              Phone: +91 7538867350<br>
+              Address: 123 Street,Tambaram-Selaiyur main road,Tambaram,chennai-59</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>

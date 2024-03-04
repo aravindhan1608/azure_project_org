@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OREGANO</title>
+    <link rel="icon" href="{{ url_for('static', filename='hp4.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+                                 <!---Navbar--->
+
+ <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PLANTS </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                              
+      <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"><i class="fa fa-home"></i>HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/herbalplants.html">HERBAL PLANTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/flowers.html">HERBAL FLOWERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">CONTACT</a>
+          </li>
+          
+        </ul>
+
+        <div class="cart">
+          <a href="/">
+            <i class="fa fa-shopping-cart fa-xl"></i>
+            <span
+              class="badge"
+              style="background-color: #000; border-radius: 100%"
+              id="cartincrement"
+              >0</span
+            ></a>
+        </div>
+        <a href="/login"><button   class="btn p-2 my-lg-0 my-2">Login</button></a>
+         
+       </div>
+    </div>
+  </nav>
+    
+
+
+                                    <!----Product-->
+
+ <section id="product">
+    <div class="container m-5">
+      <h1 class="text-center my-5"><b>PLANTS</b></h1>
+      <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div  class="card">
+          <img src="{{ url_for('static', filename='kilanelli 2.jpg') }}" class="card-img-top" alt="Kilanelli 2">
+          <div class="card-body text-center">
+            <h5 class="card-title"> PHYLLANTHUS NIRURI</h5>
+            <a href="keezhanelli.html" class="btn btn-primary">view details</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div  class="card">
+            <img src="{{ url_for('static', filename='Holy Mangrove.jpg') }}" class="card-img-top" alt="Holy Mangrove">
+            <div class="card-body text-center">
+              <h5 class="card-title">HOLY MANGROVE</h5>
+              <a href="holymangrove.html" class="btn btn-primary">view details</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div  class="card">
+              <img src="{{ url_for('static', filename='gingko.jpg') }}" class="card-img-top" alt="Gingko">
+              <div class="card-body text-center">
+                <h5 class="card-title">GINGKO</h5>
+                <a href="gingko.html" class="btn btn-primary">view details</a>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <div  class="card">
+                  <img src="{{ url_for('static', filename='bunch-watercress-bucket-marble-surface.jpg') }}" class="card-img-top" alt="Bunch Watercress Bucket Marble Surface">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">BETAL LEAF PLANT</h5>
+                    <a href="BetalLeafPlant.html" class="btn btn-primary">view details</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div  class="card">
+                    <img src="{{ url_for('static', filename='Terminalia Arjuna.jpg') }}" class="card-img-top" alt="Terminalia Arjuna">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">TERMINALIA ARJUNA</h5>
+                      <a href="Terminalia.html" class="btn btn-primary">view details</a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <div  class="card">
+                      <img src="{{ url_for('static', filename='Eveningprimroseoil.jpg') }}" class="card-img-top" alt="Evening Primrose Oil">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">EVENING PRIMROSE OIL</h5>
+                        <a href="Eveningprimroseoil.html" class="btn btn-primary">view details</a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div  class="card">
+                          <img src="{{ url_for('static', filename='potted-house-plant-isolated-white-background.jpg') }}" class="card-img-top" alt="Potted House Plant">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">GULVEL PLANT</h5>
+                            <a href="Gulvelplant.html" class="btn btn-primary">view details</a>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                          <div  class="card">
+                            <img src="{{ url_for('static', filename='Ruta Graveolens - Herb of Grace.jpg') }}" class="card-img-top" alt="Ruta Graveolens - Herb of Grace">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">RUTA GRAVEOLENS</h5>
+                              <a href="RutaGraveolens.html" class="btn btn-primary">view details</a>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-12">
+                            <div  class="card">
+                              <img src="{{ url_for('static', filename='Aesculus_hippocastanum_(1).jpg') }}" class="card-img-top" alt="Aesculus Hippocastanum">
+                              <div class="card-body text-center">
+                                <h5 class="card-title">AESCULUS HIPPOCASTANUM</h5>
+                                <a href="AesculusHippocastanum.html" class="btn btn-primary">view details</a>
+                              </div>
+                            </div>
+                            </div>
+            
+      </div>   
+    </div>
+  </section>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
+  

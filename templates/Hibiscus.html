@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OREGANO</title>
+    <link rel="icon" href="{{ url_for('static', filename='hp4.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='keezhanelli.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+      
+                                      <!---Navbar--->
+
+                                      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+                                        <div class="container-fluid">
+                                          <a class="navbar-brand" href="#">PLANTS </a>
+                                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                                            <span class="navbar-toggler-icon"></span>
+                                          </button>
+                                                                    
+                                            <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+                                              <ul class="navbar-nav mx-auto">
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/"><i class="fa fa-home"></i>HOME</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/herbalplants.html">HERBAL PLANTS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/flowers.html">HERBAL FLOWERS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="/contact.html">CONTACT</a>
+                                                </li>
+                                                
+                                              </ul>
+                                      <!-- cart icon -->
+                                              <div class="cart">
+                                                <a href="/">
+                                                  <i class="fa fa-shopping-cart fa-xl"></i>
+                                                  <span
+                                                    class="badge"
+                                                    style="background-color: #000; border-radius: 100%"
+                                                    id="cartincrement"
+                                                    >0</span
+                                                  ></a>
+                                              </div>
+                                              <a href="/login"><button   class="btn p-2 my-lg-0 my-2">Login</button></a>
+                                               
+                                             </div>
+                                          </div>
+                                        </nav>
+      
+      <section id="kilanelli">
+        <div class="container-fluid">
+        <div class="row">
+            <h1>HIBISCUS ROSA-SINENSIS</h1><br>
+          <div>
+            <img src="{{ url_for('static', filename='hibiscus 1.jpg')}}" class="img1">
+            <h4>USES OF HIBISCUS ROSA-SINENSIS</h4></div>
+            <div class="k">
+              <h5>1.ORNAMENTAL PLANT</h5>
+              <p>Chinese hibiscus is primarily grown as an ornamental plant for its vibrant and showy flowers. Its large, colorful blooms add beauty to gardens, landscapes, and indoor spaces.</p>
+              <h5>2.MEDICINAL USES</h5> 
+              <p>Hibiscus rosa-sinensis has been used in traditional medicine systems for centuries due to its potential health benefits. It is rich in antioxidants, vitamins, and minerals, making it valuable for promoting overall health and well-being.</p>
+              <h5>3.CARDIOVASCULAR HEALTH</h5>
+              <p>Hibiscus tea made from the dried petals of Chinese hibiscus flowers is known for its heart-healthy properties. It may help lower blood pressure and cholesterol levels, thereby reducing the risk of heart disease and stroke.</p>
+              <h5>4.WEIGHT MANAGEMENT</h5>
+              <p> Consuming hibiscus tea regularly may aid in weight management and obesity prevention. It can help boost metabolism, reduce fat accumulation, and promote satiety, leading to potential weight loss benefits.</p> 
+              <h5>5.LIVER HEALTH</h5> 
+              <p>Some studies suggest that hibiscus extract may have hepatoprotective effects, helping to support liver health and function. It may help prevent liver damage caused by toxins and oxidative stress.</p> 
+              </div>
+            <div class="col-lg-6 col-md-6 col-12">
+            <img src="{{ url_for('static', filename='HIBISCUS ROSA-SINENSIS 1.jpg')}}" class="img-fluid01">
+            </div>
+
+        <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2 my-5">
+           <div class="abcd"> 
+            HIBISCUS ROSA-SINENSIS<br></div>
+            <div class="rate">
+              Rs 300/-<br></div>
+             <div class="wait">M.R.P.: <strike>871</strike><br>
+              FREE delivery. Order within 2 days.</h6>
+            </div>
+            <div class="container">
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star  checked"></span>
+              <span class="fa fa-star "></span><br>
+            </div>
+            <div class="click">
+              <a href="#"><button class="button" onclick="incrementButton()">ADD CART</button></a>
+              <a href="/checkout.html"><button class="button">BUY NOW</button></a>
+            </div>
+
+            
+          </div>        
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4" >
+              <h3 style="margin-left: 25%;">About Us</h3>
+              <p style="margin-right: 20%;">An herb is a plant or plant part used for its scent, flavor, or therapeutic properties. Herbal
+                medicines are one type of dietary supplement. They are sold as tablets, capsules, powders, teas,
+                extracts, and fresh or dried plants. People use herbal medicines to try to maintain or improve 
+                their health.</p>
+          </div>
+          <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/herbalplants.html">plants</a></li>
+                <li><a href="/flowers.html">flowers</a></li>
+                <li><a href="/contact.html">contact</a></li>
+          </div>
+          <div class="col-md-4">
+              <h3 style="margin-left: 25%;">Contact Us</h3>
+              <p>Email: oregano2024@gmail.com<br>
+              Phone: +91 7538867350<br>
+              Address: 123 Street,Tambaram-Selaiyur main road,Tambaram,chennai-59</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
